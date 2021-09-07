@@ -1,0 +1,305 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5rem 28rem 27rem 35rem 27rem 10rem;
+    grid-template-areas: "nav nav nav" "main main main"
+    "Box-one Box-two Box-three" "Subject Subject Subject" 
+    "Latest-one Latest-two Latest-three" "footer footer footer";
+    
+}
+
+nav {
+    background-color: black;
+    grid-area: nav;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    
+}
+
+.top {
+   
+    display: flex;
+    flex: 1;
+    height: 80px;
+    
+    flex-direction: row;
+    align-items: center;
+}
+
+.top a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 15px;
+}
+
+.top a:hover, .top-right a:hover {
+    border-bottom: 1px solid white;
+    padding-bottom: 1px;
+    
+}
+
+.top-right {
+    display: flex;
+    
+    height: 80px;
+    
+    flex-direction: row;
+    align-items: center;
+    
+}
+.top-right a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 15px;
+}
+
+
+
+main {
+    grid-area: main;
+    background-image: url("https://www.sony.com/image/e685e97f64b37ec5a5ca09a77c79433b?fmt=pjpeg&scl=1");
+    background-size: cover;
+    color: white;
+    font-size: 20px;
+    padding-left: 100px;
+    padding-top: 80px;
+}
+
+main h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+main a {
+    padding: 10px 20px;
+    color:white;
+    text-decoration: none;
+    background-color:#5865f5;
+}
+
+.Box-one {
+    grid-area: Box-one;
+    height: auto;
+    background-image: url("https://www.sony.co.in/image/b8591af51647d693920e082bbe3c44f5?fmt=png-alpha&wid=720");
+    background-size: cover;
+}
+
+.Box-one h5 {
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.Box-one p {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-top: 15px;
+    color: white;
+    transform-style: flat;
+
+}
+
+.Box-two {
+    grid-area: Box-two;
+    height: auto;
+    background-image: url("https://www.sony.co.in/image/6d247c4fc40b848315957faa9a6278f1?fmt=jpeg&wid=720&qlt=85");
+    background-size: cover;
+}
+
+.Box-two h5 {
+    color: white;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.Box-three {
+    grid-area: Box-three;
+    height: auto;
+    background-image: url("https://www.sony.co.in/image/46df5e69947a275de24c5b3fa70a6ef1?fmt=png-alpha&wid=720");
+}
+
+.Box-three h5 {
+    color: white;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-top: 15px;
+
+}
+
+.Box-three p {
+    color: white;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+#Subject {
+    color: white;
+    font-size: 20px;
+    grid-area: Subject;
+    height: auto;
+    background-size: cover;
+    background-image: url("https://static.parade.com/wp-content/uploads/2020/06/iStock-481057316.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding-left: 50px;
+    
+    
+}
+
+#Subject h4 {
+    width: 50%;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+#Subject p {
+    width: 50%;
+    font-size: 20px;
+    padding-bottom: 25px;
+    
+}
+#Subject a {
+    width: 50%;
+    
+    color:white;
+    text-decoration: none;
+    background-color: #F8485E;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.Latest-one {
+    grid-area: Latest-one;
+    height: auto;
+    
+    background-size: cover;
+    background-image: url("https://www.sony.co.in/image/58af806d03c4bc2718af3ca8569d22d3?fmt=png-alpha&wid=720");
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 70px;
+    background-size: cover;
+}
+
+.Latest-one h5 {
+    color: white;
+    font-size: 25px;
+    padding-left: 25px;
+}
+
+.Latest-one a {
+    font-size: 20px;
+    padding-left: 25px;
+    color: white;
+
+}
+
+.Latest-two {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    grid-area: Latest-two;
+    height: auto;
+    background-image: url("https://www.sony.co.in/image/a40bc8de2159362f3a9482814e9c90d6?fmt=png-alpha&wid=720");
+    background-size: auto;
+}
+
+
+.Latest-two h5 {
+    color: white;
+    font-size: 25px;
+}
+
+.Latest-two a {
+    font-size: 20px;
+    color: white;
+}
+
+.Latest-three {
+    grid-area: Latest-three;
+    background-image: url("https://media.wired.com/photos/5f60009e40c3a6fb18426a8a/1:1/w_1117,h_1117,c_limit/Gear-Sony-A8H-src-Sony.jpg");
+    height: auto;
+    padding-top: 10px;
+    background-size: cover;
+}
+
+.Latest-three h5 {
+    color: #C62A88;
+    font-size: 25px;
+    padding-left: 25px;
+}
+
+.Latest-three a {
+    font-size: 20px;
+    padding-left: 25px;
+    color: #C62A88;
+}
+
+footer {
+    grid-area: footer;
+    background-color: violet;
+    -ms-grid-column-align: center;
+}
+
+.footer_column a {
+    color: white;
+    text-decoration: none;
+    line-height: 1.5 ;
+}
+
+.footer_column {
+    display: flex;
+    background-color: #1f2024;
+    color: white;
+    padding: 25px;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-between;
+}
+
+#bottom {
+    display: flex;
+    align-items: center;
+}
+@media only screen and (max-width:750px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 25rem 28rem 28rem 28rem 40rem 28rem 28rem 28rem 4fr;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "Box-one"
+        "Box-two"
+        "Box-three"
+        "Subject"
+        "Latest-one"
+        "Latest-two"
+        "Latest-three"
+        "footer"
+        ;
+    }
+}
